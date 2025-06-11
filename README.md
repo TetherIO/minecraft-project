@@ -1,5 +1,3 @@
-# minecraft-project
-
 ## Requirements
 
 | Tool                            | Version tested       | Notes                                                                                 |
@@ -51,13 +49,13 @@ and run the workflow under the actions tab. Locally, it's possible to do somethi
    git clone https://github.com/your‑org/minecraft‑aws.git
    cd minecraft‑aws
    ```
-2. **Get Learner‑Lab credentials from learner lab page**:
+2. **Export Learner‑Lab credentials** (Linux/macOS):
 
    ```bash
-   AWS_ACCESS_KEY_ID=…
-   AWS_SECRET_ACCESS_KEY=…
-   AWS_SESSION_TOKEN=…
-   AWS_REGION=us-east-1
+   export AWS_ACCESS_KEY_ID=…
+   export AWS_SECRET_ACCESS_KEY=…
+   export AWS_SESSION_TOKEN=…
+   export AWS_REGION=us-east-1
    ```
 3. **Initialize Terraform** (first run also creates the remote backend):
 
