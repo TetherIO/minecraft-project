@@ -2,11 +2,11 @@
 
 This project automates the deployment of a containerized Minecraft server on AWS using GitHub Actions, AWS, and Terraform. The workflow authenticates using stored repository secrets, creates the S3 backend, and runs Terraform init/apply to provision an ECS cluster, service, EFS volume, and security group. There's a smoke-test step to confirm success, and prints the server IP address and the nmap results.
 
-Extra Features:
-Used a Docker image (5 pts)
-Used ECS or EKS instead of EC2 (5 pts)
-Minecraft server data stored outside the container (10 pts)
-Configured GitHub Actions to run the whole pipeline on push (10 pts)
+### Extra Features:
+* Used a Docker image (5 pts)
+* Used ECS or EKS instead of EC2 (5 pts)
+* Minecraft server data stored outside the container (10 pts)
+* Configured GitHub Actions to run the whole pipeline on push (10 pts)
 
 
 ## Requirements
