@@ -13,8 +13,8 @@ This project automates the deployment of a containerized Minecraft server on AWS
 
 | Tool                            | Version tested       | Notes                                                                                 |
 | ------------------------------- | -------------------- | ------------------------------------------------------------------------------------- |
-| **Terraform**                   |  ≥ 1.8.0             | Required to run locally                                                               |
-| **AWS CLI v2**                  |  ≥ 2.15              | Required to run locally                                                               |
+| **Terraform**                   |               | Required to run locally                                                               |
+| **AWS CLI v2**                  |               | Required to run locally                                                               |
 | **Git**                         |  2.49.0              | Required to locally clone / commit                                                    |
 | **GitHub account**              |                      | GH Actions used to run whole pipeline on push                                         |
 |                                 |                      |           ****                                                                        |
