@@ -38,6 +38,26 @@ PORT      STATE SERVICE VERSION
 
 ![Minecraft CI/CD architecture](diagram.png)
 
+## GitHub Actions Usage Guide
+
+This project is designed to be deployed using GitHub actions. It should be possible to simply fork the repository using a GitHub student account, add the necessary repository secrets,
+and run the workflow under the actions tab. Locally, it's possible to do something similiar.
+
+1. **Fork/Clone the repo**
+
+2. **Add Learner‑Lab credentials** (Settings>Secrets and variables>Actions>Repository secrets)
+
+   ```bash
+   AWS_ACCESS_KEY_ID=…
+   AWS_SECRET_ACCESS_KEY=…
+   AWS_SESSION_TOKEN=…
+   AWS_REGION=us-east-1
+   ```
+3. **Run Workflow**
+   
+---
+
+
 ## Local Usage Guide
 
 This project is designed to be deployed using GitHub actions. It should be possible to simply fork the repository using a GitHub student account, add the necessary repository secrets,
