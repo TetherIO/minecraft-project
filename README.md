@@ -1,3 +1,14 @@
+# Minecraft Project
+
+This project automates the deployment of a containerized Minecraft server on AWS using GitHub Actions, AWS, and Terraform. The workflow authenticates using stored repository secrets, creates the S3 backend, and runs Terraform init/apply to provision an ECS cluster, service, EFS volume, and security group. There's a smoke-test step to confirm success, and prints the server IP address and the nmap results.
+
+Extra Features:
+Used a Docker image (5 pts)
+Used ECS or EKS instead of EC2 (5 pts)
+Minecraft server data stored outside the container (10 pts)
+Configured GitHub Actions to run the whole pipeline on push (10 pts)
+
+
 ## Requirements
 
 | Tool                            | Version tested       | Notes                                                                                 |
@@ -40,9 +51,6 @@ PORT      STATE SERVICE VERSION
 
 ## GitHub Actions Usage Guide
 
-This project is designed to be deployed using GitHub actions. It should be possible to simply fork the repository using a GitHub student account, add the necessary repository secrets,
-and run the workflow under the actions tab. Locally, it's possible to do something similiar.
-
 1. **Fork/Clone the repo**
 
 2. **Add Learner‑Lab credentials** (Settings>Secrets and variables>Actions>Repository secrets)
@@ -61,7 +69,7 @@ and run the workflow under the actions tab. Locally, it's possible to do somethi
 ## Local Usage Guide
 
 This project is designed to be deployed using GitHub actions. It should be possible to simply fork the repository using a GitHub student account, add the necessary repository secrets,
-and run the workflow under the actions tab. Locally, it's possible to do something similiar.
+and run the workflow under the actions tab. Locally, it's possible to do something similar.
 
 1. **Clone the repo**
 
@@ -106,7 +114,7 @@ terraform destroy -auto-approve
 ```
 
 This tears down the ECS service/cluster, EFS, security group, and leaves the
-S3 bucket + DynamoDB table so future deploys keep the same remote state.
+S3 bucket + DynamoDB table, so future deploys keep the same remote state.
 To remove the backend as well, delete the two resources manually or with the
 AWS CLI.
 
